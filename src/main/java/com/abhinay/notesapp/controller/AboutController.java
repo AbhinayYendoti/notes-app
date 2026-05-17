@@ -23,8 +23,7 @@ public class AboutController {
         return ResponseEntity.ok(Map.of(
                 "name", "Abhinay Yendoti",
                 "email", "abhinayyendoti@gmail.com",
-                "my features", features,
-                "my_features", features
+                "my features", features
         ));
     }
 }
