@@ -344,6 +344,14 @@ git status
 
 Confirm `.env` is not staged or tracked.
 
+## AI-Assisted Engineering Workflow
+
+AI tools were used intentionally as engineering productivity amplifiers, not as a replacement for design ownership or code review. Before implementation, the project was planned through PRDs, architecture contracts, DTO contracts, validation rules, authorization rules, implementation phases, and review checklists.
+
+The development process followed a constrained multi-agent workflow using Codex, Claude, and CodeRabbit for architecture orchestration, implementation acceleration, validation assistance, and review feedback. Engineering judgment remained central throughout: generated code was reviewed, tested, refined, and aligned with the project's security, maintainability, and edge-case requirements.
+
+The focus was on building a reliable backend with clear contracts, predictable authorization behavior, strong validation, and production-ready deployment practices.
+
 ## Project Structure
 
 ```text
