@@ -12,6 +12,17 @@ import java.util.Map;
 @Tag(name = "About", description = "Project metadata")
 public class AboutController {
 
+    @GetMapping("/")
+    @Operation(summary = "Get API status")
+    public ResponseEntity<Map<String, String>> home() {
+        return ResponseEntity.ok(Map.of(
+                "name", "Notes App API",
+                "status", "live",
+                "about", "/about",
+                "openapi", "/openapi.json"
+        ));
+    }
+
     @GetMapping("/about")
     @Operation(summary = "Get project metadata")
     public ResponseEntity<Map<String, Object>> about() {
